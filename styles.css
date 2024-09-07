@@ -42,7 +42,6 @@ p {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-top: 15px;
 }
 
 .navbar a {
@@ -57,100 +56,75 @@ p {
   background-color: #ff6600;
 }
 
-.auth-buttons, .language-switch {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.auth-buttons button, .language-switch button {
-  background-color: #ff6600;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.auth-buttons button:hover, .language-switch button:hover {
-  background-color: #ff4500;
-}
-
-/* Search and Filters */
-.search-section {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.search-bar {
-  width: 60%;
-  padding: 10px;
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.filter-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.filter-buttons select, .search-btn {
-  padding: 10px 15px;
-  font-size: 1em;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.search-btn {
-  background-color: #01003e;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.search-btn:hover {
-  background-color: #ff6600;
-}
-
-/* Featured Listings */
-.featured-listings {
+/* Listings Grid */
+.business-listings {
   background-color: #fff;
   padding: 40px 0;
-  text-align: center;
 }
 
-.featured-listings h2 {
+h2 {
   color: #01003e;
-  font-size: 2em;
+  font-size: 1.8em;
+  text-align: center;
   margin-bottom: 30px;
 }
 
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Listing Card */
 .listing-card {
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
   padding: 20px;
-  margin: 15px 0;
   border-radius: 10px;
-  width: 300px;
-  display: inline-block;
+  text-align: center;
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.listing-icon {
+  font-size: 1.5em;
+}
+
+.listing-category {
+  background-color: #e3e3e3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #333;
 }
 
 .listing-card h3 {
-  color: #01003e;
+  font-size: 1.2em;
+  margin: 10px 0;
 }
 
-.btn {
+.listing-details p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.listing-actions .btn {
   display: inline-block;
-  background-color: #ff6600;
+  background-color: #01003e;
   color: #fff;
   padding: 10px 15px;
   text-decoration: none;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
-.btn:hover {
-  background-color: #ff4500;
+.listing-actions .btn:hover {
+  background-color: #ff6600;
 }
 
 /* Footer Styles */
@@ -164,3 +138,4 @@ footer {
 footer p {
   margin: 0;
 }
+
