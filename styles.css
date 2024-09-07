@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
@@ -15,119 +15,135 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #01003e;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.logo {
-  max-width: 150px;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-p {
-  margin: 10px 0;
-  font-size: 1.2em;
-}
-
-/* Navigation Bar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #002060;
-  border-radius: 5px;
-}
-
-.navbar a:hover {
-  background-color: #ff6600;
-}
-
-/* Listings Grid */
-.business-listings {
   background-color: #fff;
-  padding: 40px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
 }
 
-h2 {
-  color: #01003e;
-  font-size: 1.8em;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.listings-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-/* Listing Card */
-.listing-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.listing-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
 }
 
-.listing-icon {
-  font-size: 1.5em;
+.nav-links {
+  display: flex;
+  gap: 20px;
 }
 
-.listing-category {
-  background-color: #e3e3e3;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9em;
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
   color: #333;
+  font-weight: 500;
 }
 
-.listing-card h3 {
-  font-size: 1.2em;
-  margin: 10px 0;
+.nav-links a:hover {
+  color: #ff6600;
 }
 
-.listing-details p {
-  font-size: 0.9em;
-  margin: 5px 0;
+.right-section {
+  display: flex;
+  gap: 15px;
 }
 
-.listing-actions .btn {
-  display: inline-block;
+.logo {
+  max-width: 120px;
+}
+
+.valuation-btn {
   background-color: #01003e;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 10px;
 }
 
-.listing-actions .btn:hover {
+.valuation-btn:hover {
   background-color: #ff6600;
 }
 
-/* Footer Styles */
+.login-btn {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #ff4500;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #f0f4ff;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  color: #01003e;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn {
+  background-color: #01003e;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.primary-btn:hover {
+  background-color: #ff6600;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #01003e;
+  border: 1px solid #01003e;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.secondary-btn:hover {
+  background-color: #01003e;
+  color: #fff;
+}
+
+/* Hero Illustration */
+.hero-illustration img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Footer */
 footer {
   background-color: #01003e;
   color: #fff;
