@@ -3,46 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Businesses for Sale - Nova Hereditas</title>
+  <title>Business Listings - Nova Hereditas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Navigation Bar (Optional) -->
   <header>
-    <img src="images/nova-hereditas-logo.png" alt="Nova Hereditas Logo" class="logo">
-    <h1>Businesses for Sale on Nova Hereditas</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="businesses.html">Browse Businesses</a>
-      <a href="contact.html">List Your Business</a>
-    </nav>
+    <div class="container">
+      <img src="images/nova-hereditas-logo.png" alt="Nova Hereditas Logo" class="logo">
+      <h1>Nova Hereditas | Business Listings</h1>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="businesses.html">Browse Businesses</a>
+        <a href="contact.html">For Sellers</a>
+        <a href="#">For Buyers</a>
+        <a href="#">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Listings Section -->
   <section class="business-listings">
-    <h2>Available Businesses</h2>
-    
-    <div class="business-card">
-      <h3>Italian Restaurant in Rome</h3>
-      <p><strong>Industry:</strong> Hospitality</p>
-      <p><strong>Location:</strong> Rome, Italy</p>
-      <p><strong>Asking Price:</strong> €200,000</p>
-      <a href="contact.html" class="btn">Contact Seller</a>
+    <div class="container">
+      <h2>Based on Your Criteria</h2>
+
+      <div class="listings-grid">
+
+        <!-- Listing 1 -->
+        <div class="listing-card">
+          <div class="listing-header">
+            <span class="listing-icon">🏢</span> <!-- Replace with an appropriate icon -->
+            <span class="listing-category">SaaS</span>
+          </div>
+          <h3>All-in-one AI platform that unleashes your creative potential</h3>
+          <div class="listing-details">
+            <p><strong>TTM Revenue:</strong> $264K</p>
+            <p><strong>TTM Profit:</strong> $264K</p>
+            <p><strong>Asking Price:</strong> $2K</p>
+          </div>
+          <div class="listing-actions">
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Listing 2 -->
+        <div class="listing-card">
+          <div class="listing-header">
+            <span class="listing-icon">🏢</span>
+            <span class="listing-category">SaaS</span>
+          </div>
+          <h3>Generate content with AI. Support GPT-4 and GPT-4 mini</h3>
+          <div class="listing-details">
+            <p><strong>TTM Revenue:</strong> $234K</p>
+            <p><strong>TTM Profit:</strong> $234K</p>
+            <p><strong>Asking Price:</strong> $2K</p>
+          </div>
+          <div class="listing-actions">
+            <a href="#" class="btn">View Details</a>
+          </div>
+        </div>
+
+        <!-- Add more listings similarly... -->
+
+      </div>
+
     </div>
-
-    <div class="business-card">
-      <h3>Bakery in Milan</h3>
-      <p><strong>Industry:</strong> Food & Beverage</p>
-      <p><strong>Location:</strong> Milan, Italy</p>
-      <p><strong>Asking Price:</strong> €150,000</p>
-      <a href="contact.html" class="btn">Contact Seller</a>
-    </div>
-
-    <!-- Add more business listings here -->
-
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Nova Hereditas. All rights reserved.</p>
+    <div class="container">
+      <p>© 2024 Nova Hereditas | Business Marketplace. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
