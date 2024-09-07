@@ -3,42 +3,146 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-header {
-  background-color: #01003e;  /* Nova Hereditas brand color */
-  color: #fff;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #01003e;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
 }
 
 .logo {
-  max-width: 150px;  /* Adjust size as needed */
-  margin-bottom: 20px;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-}
-
-section {
-  padding: 20px;
-}
-
-h1, h2 {
-  color: #01003e;  /* Use brand color for headings */
+h1 {
+  font-size: 2em;
 }
 
 p {
-  color: #666;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #002060;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #ff6600;
+}
+
+.auth-buttons, .language-switch {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.auth-buttons button, .language-switch button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover, .language-switch button:hover {
+  background-color: #ff4500;
+}
+
+/* Search and Filters */
+.search-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 10px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-buttons select, .search-btn {
+  padding: 10px 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  background-color: #01003e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #ff6600;
+}
+
+/* Featured Listings */
+.featured-listings {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.featured-listings h2 {
+  color: #01003e;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.listing-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  width: 300px;
+  display: inline-block;
+}
+
+.listing-card h3 {
+  color: #01003e;
 }
 
 .btn {
   display: inline-block;
-  background-color: #01003e;  /* Nova Hereditas brand color */
+  background-color: #ff6600;
   color: #fff;
   padding: 10px 15px;
   text-decoration: none;
@@ -49,36 +153,14 @@ p {
   background-color: #ff4500;
 }
 
-.business-listings {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.business-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  width: 300px;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 20px auto;
-}
-
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
+/* Footer Styles */
 footer {
-  background-color: #01003e;  /* Use Nova Hereditas brand color */
+  background-color: #01003e;
   color: #fff;
-  text-align: center;
   padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
